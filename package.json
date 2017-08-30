@@ -1,11 +1,19 @@
 {
-  "name": "cleangeojson2mongo",
-  "version": "1.0.0",
-  "description": "Clean GeoJson to import into MongoDB",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Mr. Knigth",
-  "license": "ISC"
+    "name": "cleangeojson2mongo",
+    "version": "1.0.2",
+    "description": "Clean GeoJson to import into MongoDB",
+    "main": ".lib/cleanGeoJson2Mongo",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Mr. Knigth",
+    "license": "ISC",
+    "dependencies": {
+        "commander": "^2.11.0",
+        "geojson-to-mongo": "0.0.4",
+        "togeojson": "^0.16.0"
+    }
 }

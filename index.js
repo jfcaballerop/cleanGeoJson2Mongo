@@ -1,0 +1,1 @@
+module.exports = require('./lib/cleanGeoJson2Mongo');
