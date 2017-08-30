@@ -16,5 +16,6 @@ var reemplazos = {
 //     console.log(`${index}: ${val}`);
 // });
 var filename = process.argv[2];
+var collection = process.argv[3];
 //var resultado = cleangjson.replace(objetivo, reemplazos[idioma]);
-console.log('Resultado:: ' + cleangjson.printfile(filename));
+console.log('Resultado:: ' + cleangjson.parse2savemongo(filename, collection));
