@@ -12,6 +12,7 @@
     "author": "Mr. Knigth",
     "license": "ISC",
     "dependencies": {
+        "argument-validator": "^0.1.0",
         "commander": "^2.11.0",
         "geojson-to-mongo": "0.0.4",
         "regex": "^0.1.1",

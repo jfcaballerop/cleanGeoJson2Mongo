@@ -1,21 +1,11 @@
 var cleangjson = require('../lib/cleanGeoJson2Mongo');
 
-var objetivo = "%hello% %world%! -- %world% %hello%!";
-var idioma = "es";
-var reemplazos = {
-    "en": {
-        "hello": "Hello",
-        "world": "World"
-    },
-    "es": {
-        "hello": "Hola",
-        "world": "Mundo"
-    }
-};
-// process.argv.forEach(function(val, index) {
-//     console.log(`${index}: ${val}`);
-// });
-var filename = process.argv[2];
+
+if (process.argv.length <= 9) {
+    console.log(process.argv);
+    console.log("\n## ERROR ##\n\nUsage: node " + __filename + " path collection host port db user pass authdb");
+    process.exit(-1);
+}
+var path = process.argv[2];
 var collection = process.argv[3];
-//var resultado = cleangjson.replace(objetivo, reemplazos[idioma]);
-console.log('Resultado:: ' + cleangjson.parse2savemongo(filename, collection));
+console.log('Resultado:: ' + cleangjson.parse2savemongo(path, collection, host, port, db, user, pass, authdb));
