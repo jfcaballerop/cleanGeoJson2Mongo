@@ -1,6 +1,6 @@
 {
     "name": "cleangeojson2mongo",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Clean GeoJson to import into MongoDB",
     "main": ".lib/cleanGeoJson2Mongo",
     "directories": {

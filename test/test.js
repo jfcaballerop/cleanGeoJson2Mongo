@@ -8,4 +8,10 @@ if (process.argv.length <= 9) {
 }
 var path = process.argv[2];
 var collection = process.argv[3];
+var host = process.argv[4];
+var port = process.argv[5];
+var db = process.argv[6];
+var user = process.argv[7];
+var pass = process.argv[8];
+var authdb = process.argv[9];
 console.log('Resultado:: ' + cleangjson.parse2savemongo(path, collection, host, port, db, user, pass, authdb));
