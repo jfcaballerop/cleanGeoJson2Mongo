@@ -40,13 +40,9 @@ Install it into your project with `npm install --save cleangeojson2mongo`.
 ```javascript
 // using cleangeojson2mongo in nodejs
 
-var tj = require('cleangeojson2mongo');
+var cj2m = require('cleangeojson2mongo');
 
-var kml = new DOMParser().parseFromString(fs.readFileSync('foo.kml', 'utf8'));
-
-var converted = tj.kml(kml);
-
-var convertedWithStyles = tj.kml(kml, { styles: true });
+console.log('Resultado:: ' + cj2m.parse2savemongo(path, collection, host, port, db, user, pass, authdb));
 ```
 
 
