@@ -30,7 +30,7 @@ The output is a log with operations and MongoDB results.
 Install it into your path with `npm install -i cleangeojson2mongo`.
 
 ```
-~> node test/test.js PATH COLL ...
+~> node test/test.js PATH COLLECTION [database info - host port db user pass authDB]
 ```
 
 ## Node.js
